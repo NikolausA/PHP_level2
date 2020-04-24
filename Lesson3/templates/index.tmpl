@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <style>
+        
+        </style>
+    </head>
+    <body>
+        <h1>{{title}}</h1>
+        {% for photo in photos %}
+            <div class="gallery"><A Href="photo.php?photo={{photo}}"><img src="{{small_photo_path}}{{photo}}"</A></div>
+        {% endfor %}
+    </body>
+</html>
