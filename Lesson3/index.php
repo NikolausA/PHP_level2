@@ -15,7 +15,7 @@ $arr_photo = array_slice(scandir(PHOTO_BIG_PATH), 2);
     
 echo $template->render([
     'title' => 'Фото альбом',
-    'small_photo_path' => 'PHOTO_PATH',
+    'small_photo_path' => PHOTO_PATH,
     'photos' => $arr_photo
 ]);
 }
