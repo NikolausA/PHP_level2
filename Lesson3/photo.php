@@ -16,7 +16,7 @@ if (!file_exists(PHOTO_BIG_PATH . $photo)) throw new Exception ('There is not ph
     
 echo $template->render([
     'title' => 'Фотография ',
-    'big_photo_path' => 'PHOTO_BIG_PATH',
+    'big_photo_path' => PHOTO_BIG_PATH,
     'photo' => $photo
 ]);
 }
